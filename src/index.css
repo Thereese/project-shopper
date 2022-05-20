@@ -85,6 +85,7 @@ header {
   padding: 0;
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .price-box {
@@ -118,6 +119,7 @@ header {
   cursor: pointer;
   width: 40%;
   padding-top: 4px;
+  color: black;
 }
 
 .addbtn:active {
