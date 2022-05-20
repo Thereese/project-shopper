@@ -94,25 +94,34 @@ header {
   margin-top: 32px;
 }
 
-
 .price-box h3 {
+ font-size: 24px;
+}
+
+.price-box h4 {
   text-decoration: line-through;
   text-decoration-color: black;
-  color: grey;
+  color: rgb(99, 98, 98);
   text-align: center;
-}
-.wishlist-btn {
-  border: 1px solid black;
-  background-color: transparent;
-  box-shadow: 4px 4px;
-  cursor: pointer;
-  width: 40%;
 }
 
 .addbtn-box {
   display: flex;
   justify-content: center;
   margin-top: 32px;
+}
+
+.addbtn {
+  border: 1px solid black;
+  background-color: transparent;
+  box-shadow: 4px 4px;
+  cursor: pointer;
+  width: 40%;
+  padding-top: 4px;
+}
+
+.addbtn:active {
+  background-color: grey;
 }
 
 .cart {
@@ -122,10 +131,8 @@ header {
   flex-direction: column;
   padding: 50px;
   font-size: 30px;
+  font-weight: bold;
 }
-/* .info {
-  font-size: 20px;
-} */
 
 .items {
   font-size: 20px;
@@ -133,11 +140,6 @@ header {
   padding-bottom: 2rem;
   line-height: 1.8;
 }
-.amount {
-  font-size: 30px;
-  margin-left: 10px;
-}
-
 
 @media screen and (min-width: 668px) {
   .list-container {
@@ -145,6 +147,18 @@ header {
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     row-gap: 20px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .cart {
+    font-size: 40px;
+  }
+
+  .items {
+    font-size: 30px;
   }
 }
 

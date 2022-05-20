@@ -20,15 +20,13 @@ export const Product = ({ product }) => {
           <div className="toggleinfo-box">
             <button
               className="toggle-btn"
-              style={{
-                marginBottom: visible ? 0 : 86,
-              }}
+              style={{ marginBottom: visible ? 0 : 86 }}
               onClick={() => setVisible((prev) => !prev)}
             >
               {visible && <IoIosArrowUp />}
               {!visible && <IoIosArrowDown />}
               See information
-            </button>{" "}
+            </button>
             {visible && (
               <ul>
                 <li>Size:&nbsp;{product.productinfo.size}</li>
@@ -38,20 +36,15 @@ export const Product = ({ product }) => {
             )}
           </div>
           <div className="price-box">
-            <h2
-              style={{
-                color: product.newprice ? "red" : "black",
-              }}
-            >
+            <h3 style={{ color: product.newprice ? "red" : "black" }}>
               {product.newprice ? product.newprice : product.price}:-
-            </h2>
-            <h3>{product.newprice ? product.price : false}</h3>
+            </h3>
+            {product.newprice && <h4>{product.price}</h4>}
           </div>
           <div className="addbtn-box">
             <button
-              className="wishlist-btn"
+              className="addbtn"
               type="button"
-              disabled={product.inventory === 0}
               onClick={() => dispatch(cart.actions.addItem(product))}
             >
               Add to list

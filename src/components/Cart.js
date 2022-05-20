@@ -28,9 +28,7 @@ export const Cart = () => {
           <CartItem key={product.id} product={product} />
         ))}
       </div>
-      <div className="total">
-        <div className="amount">Total Price: {totalPrice}:-</div>
-      </div>
+      <div>Total Price:&nbsp;&nbsp;{totalPrice}:-</div>
     </div>
   );
 };
