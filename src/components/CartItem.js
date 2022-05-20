@@ -15,10 +15,3 @@ export const CartItem = ({ product }) => {
     </>
   );
 };
-
-{
-  /* <span className="singleitems">{product.productname}</span>;
-{
-  product.quantity > 1 && <span className="quantity">x{product.quantity}</span>;
-} */
-}
