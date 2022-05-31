@@ -5,6 +5,10 @@ export const cart = createSlice({
   initialState: {
     items: [],
   },
+
+  //action that first checks if the item (payload) is in the cart and then either
+  //pushes it to items or adds quantity
+  //use spread operator to add quantity-property
   reducers: {
     addItem: (state, action) => {
       const existingProduct = state.items.find(

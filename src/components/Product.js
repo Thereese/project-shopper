@@ -4,6 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { cart } from "reducers/cart";
 import orangeimg from "../orangeimg.jpeg";
 
+//lists all data rendered in the "product-box"
 export const Product = ({ product }) => {
   const dispatch = useDispatch();
   const [visible, setVisible] = useState(false);
